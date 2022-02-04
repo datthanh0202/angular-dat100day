@@ -1,3 +1,4 @@
+import { EventHandlerVars } from '@angular/compiler/src/compiler_util/expression_converter';
 import { Component, VERSION } from '@angular/core';
 
 @Component({
@@ -7,4 +8,15 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
+  // DATA BINDING 
+  InputType = 'text';
+  
+  //EVENT BINDING
+  handler(event){
+  console.log('clicked',event);
+};
+  user = {
+    name: 'Dat',
+    age: 32
+  };
 }
