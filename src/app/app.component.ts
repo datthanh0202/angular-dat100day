@@ -7,16 +7,23 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
+  //name = 'Angular ' + VERSION.major;
   // DATA BINDING 
-  InputType = 'text';
+  //InputType = 'text';
   
   //EVENT BINDING
-  handler(event){
-  console.log('clicked',event);
-};
+  //handler(event){
+  //console.log('clicked',event);
+//};
+  //user = {
+    //name: 'Dat',
+    //age: 32
+  //};
+  name = 'Angular' + VERSION.major;
+  show = false;
   user = {
-    name: 'Dat',
-    age: 32
-  };
+    name : 'John Snow', 
+    age : 25
+  }
+
 }
