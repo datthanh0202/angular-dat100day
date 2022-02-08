@@ -20,3 +20,31 @@
 <button (click)="user.age = user.age - 1">-</button>
 Age: {{ user.age }}
 <button (click)="user.age = user.age + 1">+</button>
+<br /><br />
+<button (click)="isWarning = !isWarning">Warning</button><br />
+<button (click)="isDanger = !isDanger">Danger</button>
+<!--
+  - [class.tenclass]
+  - [class] = "array"
+  - [class] = "variable"
+-->
+<div
+  class="box"
+  [class.red-border]="isDanger"
+  [class.yellow-background]="isWarning"
+></div>
+<br />
+<!--
+  - [style.tenStyle]
+  - [style.tenStyle.unit]
+  - style = "object"
+-->
+<p
+  [style.color]="'red'"
+  [style.background]="'yellow'"
+  [style.fontSize.px]="'20'"
+>
+  Start editing to see some magic happen :D
+</p>
+
+<p>Hello ! how are you</p>
